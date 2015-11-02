@@ -1,28 +1,28 @@
-== README
+Monkier Prueba
+===============
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Powerful Software
+----------------
 
-Things you may want to cover:
+### Welcome to the repository
+Fell free to acces [My portfolio](http://portfolio.pruebamonkier.com)
 
-* Ruby version
+> ## Lorem Ipsum es simplemente el texto de relleno
+>
+> ##  texto de relleno de las imprentas y archivos de texto.
+>
+> Lorem Ipsum es simplemente el *texto*
 
-* System dependencies
+Lorem Ipsum es simplemente el **texto**
 
-* Configuration
+### Crazy good software
+* Rapid Development
++ Tested
+- 24/7 support
 
-* Database creation
+### Reasons to choose us
+1. Price
+2. Precision
+3. Performance
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+this is what ruby code would look like `puts 'hello world'`

@@ -2,7 +2,9 @@
 
 <h1>Listing Invoices</h1>
 
-<table>
+<div class = "media">
+  <div class = "media-body">
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Date</th>
@@ -16,13 +18,13 @@
   <tbody>
     <% @invoices.each do |invoice| %>
       <tr>
-        <td><%= invoice.date %></td>
+        <td><%= invoice.date.strftime("%Y/%m/%d") %></td>
         <td><%= invoice.company %></td>
         <td><%= invoice.tax %></td>
         <td><%= invoice.salesperson %></td>
-        <td><%= link_to 'Show', invoice %></td>
-        <td><%= link_to 'Edit', edit_invoice_path(invoice) %></td>
-        <td><%= link_to 'Destroy', invoice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Mostrar', invoice, class: 'btn btn-xs btn-default' %></td>
+        <td><%= link_to 'Editar', edit_invoice_path(invoice), class: 'btn btn-xs btn-success' %></td>
+        <td><%= link_to 'Borrar', invoice, method: :delete, class: 'btn btn-xs btn-danger', data: { confirm: '¿Seguro que quieres borrar?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Invoice', new_invoice_path %>
+    <%= link_to 'Nueva entrada', new_invoice_path, class:"btn btn-sm btn-warning" %>
